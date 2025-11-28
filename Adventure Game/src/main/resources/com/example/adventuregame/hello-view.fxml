@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.adventuregame.HelloController">
+    <VBox spacing="10" layoutX="10" layoutY="10">
+        <Label text="Adventure Game"/>
+        <HBox spacing="10">
+            <Label fx:id="hpLabel" text="HP: 20"/>
+            <Label fx:id="goldLabel" text="Gold: 0"/>
+        </HBox>
+        <TextArea fx:id="gameLog" prefHeight="200" prefWidth="300" wrapText="true"/>
+        <GridPane hgap="5" vgap="5">
+            <Button fx:id="upBtn" text="Up" GridPane.columnIndex="1" GridPane.rowIndex="0" onAction="#moveUp"/>
+            <Button fx:id="leftBtn" text="Left" GridPane.columnIndex="0" GridPane.rowIndex="1" onAction="#moveLeft"/>
+            <Button fx:id="rightBtn" text="Right" GridPane.columnIndex="2" GridPane.rowIndex="1" onAction="#moveRight"/>
+            <Button fx:id="downBtn" text="Down" GridPane.columnIndex="1" GridPane.rowIndex="2" onAction="#moveDown"/>
+        </GridPane>
+        <HBox spacing="10">
+            <Button fx:id="searchBtn" text="Search" onAction="#searchRoom"/>
+            <Button fx:id="sleepBtn" text="Sleep" onAction="#sleep"/>
+        </HBox>
+        <HBox spacing="10">
+            <Button fx:id="fightBtn" text="Fight" onAction="#fight"/>
+            <Button fx:id="runBtn" text="Run" onAction="#run"/>
+        </HBox>
+    </VBox>
+</AnchorPane>

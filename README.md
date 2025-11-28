@@ -1,1 +1,1 @@
-# Adventure-Game
+# JavaTemplate
