@@ -23,17 +23,14 @@ An interactive grid-based adventure game using Java, JavaFX, and SceneBuilder. D
 - Serves strictly as the presentation layer with no embedded game logic
 
 #### Game.java
-- Serves as the central game-state manager and rules engine
 - Maintains player position, map boundaries, and blocked room data
 - Implements a procedurally generated grid with randomized obstacles
 - Controls player movement validation and boundary enforcement
 - Handles probabilistic monster spawning during traversal
 - Tracks searched rooms to prevent duplicate gold rewards
 - Governs room-search mechanics based on player intelligence
-- Acts as the authoritative source of truth for world state
   
 #### HelloApplication.java
-- Acts as the JavaFX application entry point
 - Loads the FXML layout and initializes the primary scene
 - Configures application window properties such as title and size
 - Boots the JavaFX runtime and launches the UI lifecycle
@@ -53,15 +50,10 @@ An interactive grid-based adventure game using Java, JavaFX, and SceneBuilder. D
 - Represents enemy entities encountered during exploration
 - Encapsulates combat-relevant attributes (HP, strength, dexterity, intelligence)
 - Generates monster stats procedurally for encounter variability
-- Supports combat resolution through damage handling and survival checks
-- Designed to be lightweight and instantiated dynamically
   
 #### Player.java
-- Represents the player character and persistent player state
 - Stores health, combat statistics, intelligence, and accumulated gold
 - Uses dice-roll–based stat generation to introduce variability
-- Implements health management through damage and healing methods
-- Influences combat success and exploration outcomes
   
 #### Room.java
 - Represents an abstract room within the grid-based map
