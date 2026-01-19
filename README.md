@@ -4,6 +4,7 @@
 An interactive grid-based adventure game using Java, JavaFX, and SceneBuilder. Designed and implemented an object-oriented architecture with custom classes. Developed the user interface (UI) in FXML and integrated it with backend logic through a JavaFX controller, handling event-driven input, scene updates, game-state transitions, and combat interactions. 
 
 ## Installation
+### Requirments
 - Java JDK 17+ (or compatible JavaFX-supported version)
 - JavaFX SDK
 - IDE such as IntelliJ IDEA (recommended)
